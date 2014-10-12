@@ -21,9 +21,5 @@ if (( $+commands[fortune] )); then
     print
   fi
 fi
-<<<<<<< HEAD
-
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-=======
->>>>>>> 53bd555c6dd0ac87d9814bfb9b6af6feb9bac796
