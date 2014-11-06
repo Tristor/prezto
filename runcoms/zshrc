@@ -12,11 +12,8 @@ fi
 
 # Customize to your needs...
 
-PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-export PATH
 # pip should only run if there is a virtualenv currently activated
 export PIP_REQUIRE_VIRTUALENV=true
 # cache pip-installed packages to avoid re-downloading
@@ -41,3 +38,34 @@ if [[ -s $HOME/.nvm ]];
 	NVM_DIR=$HOME/.nvm 
 	source $NVM_DIR/nvm.sh 
 fi
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory extendedglob
+unsetopt beep
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/Users/tduzan-LT/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# RVM
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# TextMate
+export EDITOR="/usr/local/bin/mate -w"
+
+#For brewed OpenSSH
+eval $(ssh-agent)
+
+function cleanup {
+  echo "Killing SSH-Agent"
+  kill -9 $SSH_AGENT_PID
+}
+
+trap cleanup EXIT
