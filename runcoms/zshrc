@@ -12,7 +12,7 @@ fi
 
 # Customize to your needs...
 
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:~/scripts:$PATH
 
 # pip should only run if there is a virtualenv currently activated
 export PIP_REQUIRE_VIRTUALENV=true
@@ -26,6 +26,7 @@ syspip(){
 #Google Go (Golang)
 export GOPATH=$HOME/projects/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 #Haskell/Cabal
 export PATH=$HOME/.cabal/bin:$PATH
@@ -59,6 +60,10 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # TextMate
 export EDITOR="/usr/local/bin/mate -w"
+
+#ls color highlighting on OS X is terribad
+alias ls="ls"
+
 
 #For brewed OpenSSH
 eval $(ssh-agent)
