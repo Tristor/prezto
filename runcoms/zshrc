@@ -61,10 +61,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # TextMate
 export EDITOR="/usr/local/bin/mate -w"
 
-#ls color highlighting on OS X is terribad
-alias ls="ls"
-
-
 #For brewed OpenSSH
 eval $(ssh-agent)
 
