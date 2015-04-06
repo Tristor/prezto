@@ -49,7 +49,7 @@ unsetopt beep
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/Users/tduzan-LT/.zshrc'
+zstyle :compinstall filename '${ZDOTDIR:-$HOME}.zshrc'
 
 autoload -Uz compinit
 compinit
