@@ -55,6 +55,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Add homebrew to the completion path
+fpath=("/usr/local/bin/" $fpath)
+
 # RVM
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
