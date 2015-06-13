@@ -12,7 +12,7 @@ fi
 
 # Customize to your needs...
 
-export PATH=/usr/local/bin:~/scripts:$PATH:/usr/sbin
+export PATH=/usr/local/bin:~/scripts:$PATH:/usr/sbin:/sbin
 
 # pip should only run if there is a virtualenv currently activated
 export PIP_REQUIRE_VIRTUALENV=true
