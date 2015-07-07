@@ -72,16 +72,6 @@ else
     export VISUAL="/usr/local/bin/vim"
 fi
 export EDITOR="${VISUAL}"
-    
-#For brewed OpenSSH
-#eval $(ssh-agent)
 
 # Clean up git branches left over from git-flow after merge
 # git branch --merged | egrep -v "^\*|master|develop" | xargs -n 1 git branch -d
-
-function cleanup {
-  echo "Killing SSH-Agent"
-  kill -9 $SSH_AGENT_PID
-}
-
-trap cleanup EXIT
