@@ -74,4 +74,6 @@ fi
 export EDITOR="${VISUAL}"
 
 # Clean up git branches left over from git-flow after merge
-# git branch --merged | egrep -v "^\*|master|develop" | xargs -n 1 git branch -d
+gitclean(){
+    git branch --merged | egrep -v "^\*|master|develop" | xargs -n 1 git branch -d
+}
