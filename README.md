@@ -1,7 +1,9 @@
 Prezto — Instantly Awesome Zsh
 ==============================
 
-This is a slightly lagging behind it's upstream, but is a mostly up to date copy of Sorin Ionescu's Prezto.  This is forked in order to contain a copy in git of my changes and to provide me a way to easily synchronize these changes across systems.  The only files modified here-in are in the runcoms folder, which contains my .zshrc, .zpreztorc, .zlogin, and .zlogout.  You are welcome to clone this repo to get my configs, which are well-tested and used by me (and some of my coworkers) on numerous systems.  Obviously, I use a Mac, and most of my settings are changed with that in mind.  These configs work as-is on ZSH on FreeBSD 10.x as well.  Other environments YMMV.
+This is a slightly lagging behind it's upstream, but is a mostly up to date copy of Sorin Ionescu's Prezto.  This is forked in order to contain a copy in git of my changes and to provide me a way to easily synchronize these changes across systems.  The primary files modified here-in are in the runcoms folder, which contains my .zshrc, .zpreztorc, .zlogin, and .zlogout.  You are welcome to clone this repo to get my configs, which are well-tested and used by me (and some of my coworkers) on numerous systems.  Obviously, I use a Mac, and most of my settings are changed with that in mind.  These configs work as-is on ZSH on FreeBSD 10.x as well.  Other environments YMMV.
+
+In addition to configuration changes, I maintain some patches within this fork that make Prezto play more nicely with a Mac using Homebrew to replace some out-of-date system services which do not include Apple-provided patches.  These patches get submitted upstream, but will be available in this fork first since I use them myself.
 
 
 
