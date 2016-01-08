@@ -62,7 +62,7 @@ fpath=("/usr/local/bin/" $fpath)
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Editor Setting
-if [ "$(uname)" == "Darwin" ]; then #Only OS X
+if [ "$(uname)" = "Darwin" ]; then #Only OS X
     if [[ -x /usr/local/bin/mvim ]]; then # Prefer MacVim
         export VISUAL="/usr/local/bin/mvim -v"
     elif [[ -x /usr/local/bin/mate ]]; then #Alternatively use TextMate2 if MacVim is not installed
