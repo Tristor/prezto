@@ -3,6 +3,19 @@ OSX
 
 Defines [Mac OS X][1] aliases and functions.
 
+Settings
+--------
+
+### Dash Keyword
+
+To change the keyword used by `mand` to open man pages in [_Dash.app_][2] from
+its default value of 'manpages', add the following line in *zpreztorc* and
+replace the **keyword** with the one configured in [_Dash.app_][2].
+
+```sh
+zstyle ':prezto:module:osx:man' dash-keyword 'keyword'
+```
+
 Aliases
 -------
 
@@ -10,6 +23,10 @@ Aliases
     directory.
   - `pushdf` pushes the current working directory onto the directory queue and
     changes the current working director to the current _Finder_ directory.
+  - `lock` invokes Fast User Switching to lock the screen.
+  - `snap` saves a screen shot to the current directory providing a 1 second delay for app switching.
+  - `mute` kills the system volume. Adjusting volume through System Preferences or the keyboard will undo this.
+  - `unmute` is the opposite of `mute`.
 
 Functions
 ---------
